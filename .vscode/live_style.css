@@ -1,0 +1,307 @@
+
+        QWidget {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
+            font-size: 13px;
+        }
+        
+        QMainWindow, QDialog {
+            background-color: #0f172a;
+        }
+        
+        /* ===== GROUP BOXES ===== */
+        QGroupBox {
+            background-color: #1e293b;
+            border: 1px solid #475569;
+            border-radius: 8px;
+            margin-top: 16px;
+            padding-top: 16px;
+            font-weight: 600;
+        }
+        
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            left: 16px;
+            padding: 0 8px;
+            color: #2563eb;
+        }
+        
+        /* Voice Settings Group - 300px height */
+        QGroupBox#voiceSettingsGroup {
+            min-height: 300px;
+            max-height: 300px;
+            padding: 15px;
+        }
+        
+        /* Inner items - 30px height */
+        QGroupBox#voiceSettingsGroup QLabel {
+            color: #94a3b8;
+            min-height: 30px;
+            max-height: 30px;
+            qproperty-alignment: AlignRight | AlignVCenter;
+        }
+        
+        QGroupBox#voiceSettingsGroup QComboBox,
+        QGroupBox#voiceSettingsGroup QSpinBox,
+        QGroupBox#voiceSettingsGroup QDoubleSpinBox {
+            background-color: #334155;
+            border: 1px solid #475569;
+            border-radius: 4px;
+            min-height: 30px;
+            max-height: 30px;
+            padding: 2px 8px;
+            font-size: 13px;
+        }
+        
+        QGroupBox#voiceSettingsGroup QComboBox:hover,
+        QGroupBox#voiceSettingsGroup QSpinBox:hover,
+        QGroupBox#voiceSettingsGroup QDoubleSpinBox:hover {
+            border-color: #2563eb;
+        }
+        
+        QGroupBox#voiceSettingsGroup QComboBox::drop-down {
+            width: 20px;
+            border: none;
+        }
+        
+        QGroupBox#voiceSettingsGroup QComboBox::down-arrow {
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #f8fafc;
+            margin-right: 4px;
+        }
+        
+        QGroupBox#voiceSettingsGroup QSpinBox::up-button,
+        QGroupBox#voiceSettingsGroup QSpinBox::down-button,
+        QGroupBox#voiceSettingsGroup QDoubleSpinBox::up-button,
+        QGroupBox#voiceSettingsGroup QDoubleSpinBox::down-button {
+            width: 16px;
+            subcontrol-origin: border;
+        }
+        
+        /* ===== BUTTONS ===== */
+        QPushButton {
+            background-color: #334155;
+            border: 1px solid #475569;
+            border-radius: 6px;
+            padding: 8px 16px;
+            min-height: 36px;
+            font-weight: 500;
+        }
+        
+        QPushButton:hover {
+            background-color: #475569;
+            border-color: #2563eb;
+        }
+        
+        QPushButton:pressed {
+            background-color: #334155;
+        }
+        
+        QPushButton:disabled {
+            background-color: #1e293b;
+            color: #64748b;
+            border-color: #475569;
+        }
+        
+        QPushButton#primary {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+        }
+        
+        QPushButton#primary:hover {
+            background-color: #1d4ed8;
+        }
+        
+        QPushButton#primary:pressed {
+            background-color: #1e40af;
+        }
+        
+        QPushButton#success {
+            background-color: #16a34a;
+            color: white;
+            border: none;
+        }
+        
+        QPushButton#success:hover {
+            background-color: #15803d;
+        }
+        
+        QPushButton#success:pressed {
+            background-color: #166534;
+        }
+        
+        /* Other group boxes (keep default height) */
+        QGroupBox#advancedSettingsGroup,
+        QGroupBox#playbackGroup,
+        QGroupBox#exportSettingsGroup {
+            min-height: auto;
+            max-height: none;
+        }
+        
+        /* ===== COMBO BOXES (outside group) ===== */
+        QComboBox, QLineEdit, QSpinBox, QDoubleSpinBox, QListWidget, QTextEdit {
+            background-color: #334155;
+            border: 1px solid #475569;
+            border-radius: 6px;
+            padding: 6px 12px;
+            min-height: 32px;
+        }
+        
+        QComboBox:hover, QLineEdit:hover, QSpinBox:hover, QDoubleSpinBox:hover, 
+        QListWidget:hover, QTextEdit:hover {
+            border-color: #2563eb;
+        }
+        
+        QComboBox:focus, QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus,
+        QListWidget:focus, QTextEdit:focus {
+            border: 2px solid #2563eb;
+        }
+        
+        QComboBox::drop-down {
+            border: none;
+            width: 24px;
+        }
+        
+        QComboBox::down-arrow {
+            image: none;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #f8fafc;
+            margin-right: 8px;
+        }
+        
+        QCheckBox {
+            spacing: 8px;
+        }
+        
+        QCheckBox::indicator {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            background-color: #334155;
+            border: 1px solid #475569;
+        }
+        
+        QCheckBox::indicator:hover {
+            border-color: #2563eb;
+        }
+        
+        QCheckBox::indicator:checked {
+            background-color: #2563eb;
+            border-color: #2563eb;
+        }
+        
+        QProgressBar {
+            background-color: #334155;
+            border: 1px solid #475569;
+            border-radius: 4px;
+            text-align: center;
+            min-height: 16px;
+            max-height: 16px;
+        }
+        
+        QProgressBar::chunk {
+            background-color: #2563eb;
+            border-radius: 4px;
+        }
+        
+        QSlider::groove:horizontal {
+            background-color: #334155;
+            border: 1px solid #475569;
+            border-radius: 4px;
+            height: 8px;
+        }
+        
+        QSlider::handle:horizontal {
+            background-color: #2563eb;
+            border-radius: 10px;
+            width: 20px;
+            height: 20px;
+            margin: -6px 0;
+        }
+        
+        QSlider::handle:horizontal:hover {
+            background-color: #1d4ed8;
+        }
+        
+        QListWidget::item {
+            padding: 8px;
+            border-radius: 4px;
+            margin: 2px;
+        }
+        
+        QListWidget::item:selected {
+            background-color: #2563eb;
+            color: white;
+        }
+        
+        QListWidget::item:hover:!selected {
+            background-color: #475569;
+        }
+        
+        QStatusBar {
+            background-color: #1e293b;
+            color: #94a3b8;
+            border-top: 1px solid #475569;
+            font-size: 12px;
+        }
+        
+        QSplitter::handle {
+            background-color: #475569;
+            border-radius: 2px;
+        }
+        
+        QSplitter::handle:hover {
+            background-color: #2563eb;
+        }
+        
+        QSplitter::handle:horizontal {
+            width: 2px;
+            margin: 2px 0;
+        }
+        
+        QSplitter::handle:vertical {
+            height: 2px;
+            margin: 0 2px;
+        }
+        
+        QScrollBar:vertical {
+            background-color: #334155;
+            width: 12px;
+            border-radius: 6px;
+        }
+        
+        QScrollBar::handle:vertical {
+            background-color: #475569;
+            border-radius: 6px;
+            min-height: 40px;
+        }
+        
+        QScrollBar::handle:vertical:hover {
+            background-color: #2563eb;
+        }
+        
+        QScrollBar:horizontal {
+            background-color: #334155;
+            height: 12px;
+            border-radius: 6px;
+        }
+        
+        QScrollBar::handle:horizontal {
+            background-color: #475569;
+            border-radius: 6px;
+            min-width: 40px;
+        }
+        
+        QScrollBar::handle:horizontal:hover {
+            background-color: #2563eb;
+        }
+        
+        QScrollBar::add-line, QScrollBar::sub-line {
+            border: none;
+            background: none;
+        }
+        

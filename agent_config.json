@@ -1,0 +1,8 @@
+{
+  "api_key": "sk-06589286891b45f9b838c9960d039167",
+  "model": "deepseek-chat",
+  "temperature": 0.7,
+  "max_tokens": 2000,
+  "system_prompt": "You are a helpful AI assistant. Provide clear, concise, and accurate responses.",
+  "stream_response": true
+}

@@ -1,0 +1,6 @@
+2026-02-13 22:46:45,756 - __main__ - INFO - Main window initialized
+2026-02-13 22:46:45,761 - __main__ - INFO - AI Speech-to-Text Pro v2.0.0 started successfully
+2026-02-13 22:46:47,645 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+2026-02-13 22:51:17,875 - __main__ - INFO - Main window initialized
+2026-02-13 22:51:17,875 - __main__ - INFO - AI Speech-to-Text Pro v2.0.0 started successfully
+2026-02-13 22:51:19,820 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
